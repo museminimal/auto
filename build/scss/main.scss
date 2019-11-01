@@ -1,0 +1,105 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "header";
+@import "banner";
+@import "advantages";
+@import "prices";
+@import "comments";
+@import "step-by-step-sale";
+@import "sale-examples";
+@import "support";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+//TITLES
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.title__left {
+  text-align: left !important;
+}
+
+.title {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Russo_One";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 1.28px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0;
+  padding: 15px 0 20px 44px;
+}
+
+.title_color_black {
+  color: #222;
+}
+
+.title_color_black::after {
+  background: #222222 !important;
+  color: #222222 !important;
+}
+
+.title_color_white {
+  color: #fff;
+}
+
+.offer-description__cart_img {
+  text-align: center;
+}
+
+.title::before {
+  content: '';
+  display: block;
+  width: 87px;
+  height: 100%;
+  position: absolute;
+  background: #dd6d4b;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+.title::after {
+  content: '';
+  display: block;
+  width: 73px;
+  height: 4px;
+  background: #ffffff;
+  position: absolute;
+  z-index: -1;
+  bottom: 15px;
+  left: 65px;
+}
+
+.title__container {
+  text-align: center;
+  padding: 60px 0 60px;
+}

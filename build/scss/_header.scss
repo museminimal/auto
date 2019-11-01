@@ -1,0 +1,61 @@
+.header__inner {
+  @include flex__classic;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.nav {
+  @include flex__classic;
+  margin-bottom: 0;
+
+  &__nav-link {
+    display: block;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Exo2Regular';
+    padding: 0 20px;
+  }
+
+  &__nav-link:hover {
+    color: #06bc7e;
+    text-decoration: none;
+  }
+}
+
+.contacts {
+  position: relative;
+  line-height: 1.2;
+  padding-left: 30px;
+
+  &__info {
+    display: block;
+    font-family: 'Exo2Regular';
+    color: #222222;
+  }
+
+  &__contacts__info_top {
+    @include contacts__info_top;
+  }
+
+  &__info_top:hover {
+    text-decoration: none;
+    color: #00bd7b;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 27px;
+    background: url('../../build/img/phone.png');
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+}
+
+
+

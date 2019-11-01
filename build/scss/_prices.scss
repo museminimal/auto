@@ -1,0 +1,40 @@
+.prices {
+  background: url('../../build/img/price-banner.png');
+  min-height: 200px;
+  padding: 42px 0;
+  margin-bottom: 70px;
+}
+
+.prices__title {
+    color: #ffffff;
+    font-family: "Exo2Regular";
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 1.12px;
+    text-align: center;
+  }
+
+.prices__btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 6px 30px;
+    background: #ffee00;
+    border-radius: 8px;
+    color: #222222;
+    font-family: "Exo2Regular";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.64px;
+    margin-top: 32px;
+  }
+
+.btn_container {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+.prices__btn:hover {
+    text-decoration: none;
+    background: #222222;
+    color: #ffee00;
+  }

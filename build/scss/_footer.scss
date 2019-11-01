@@ -1,0 +1,149 @@
+.footer {
+  background-color: #06bc7e;
+  padding: 45px 0 0;
+
+  &_top {
+    padding-bottom: 40px;
+  }
+}
+
+.footer__logo {
+  position: relative;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.footer__logo::before {
+  content: '';
+  display: block;
+  width: 114px;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer__nav_list-item {
+  color: #ffffff;
+}
+
+.footer__nav_list-item:hover {
+  color: #ffef00;
+  text-decoration: none;
+}
+
+.footer__title {
+  color: #ffffff;
+  font-family: "Exo2Regular";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.64px;
+  margin-bottom: 32px;
+}
+
+.footer__title::after {
+  content: '';
+  display: block;
+  width: 114px;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  top: 40px;
+  left: 15px;
+}
+
+.footer__subtitle {
+  color: #ffffff;
+  font-family: "Exo2Regular";
+  font-size: 12px;
+  font-weight: 400;;
+  letter-spacing: 0.48px;
+  margin: 25px 0 2px;
+}
+
+.footer_text {
+  font-family: "Exo2Thin";
+  font-weight: 100;
+  letter-spacing: 0.48px;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.services:first-of-type::before {
+  top: 68px;
+}
+
+.footer-bottom {
+  background: #dd6d4b;
+}
+
+.footer__phones {
+  font-family: "Exo2Regular";
+  /*max-width: 180px;*/
+  position: relative;
+  margin-bottom: 35px;
+  text-align: right;
+  display: block;
+  padding-right: 50px;
+}
+
+.contacts__info_btm {
+  @include contacts__info__btm;
+}
+
+.contacts__info_btm:hover {
+  text-decoration: none;
+  color: #222222;
+}
+
+.contacts__info_btm::after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 27px;
+  background: url('../../build/img/footer_phone.png') no-repeat center / contain;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.footer__address {
+  padding-right: 30px;
+}
+
+.address {
+  color: #ffffff;
+  font-family: "Exo2Regular";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.56px;
+  display: block;
+  text-align: right;
+}
+
+.footer__address::after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 27px;
+  background: url('../../build/img/map.png') no-repeat center / contain;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.copyrights {
+  color: #ffffff;
+  font-family: "Exo2Regular";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.64px;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;
+}
+
+

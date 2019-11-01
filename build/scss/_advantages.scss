@@ -1,0 +1,45 @@
+.advantages {
+  background: #06bc7e;
+  padding-bottom: 70px;
+
+  &_img {
+    height: 138px;
+  }
+
+  &__title_container {
+    text-align: center;
+  }
+}
+
+.img_2 {
+  width: 220px !important;
+}
+
+.offer-description__cart__container {
+  margin-top: 100px;
+
+  &_img  {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.offer-description__cart_title {
+  color: #f7fe2d;
+  font-family: "Exo2Regular";
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.64px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.offer-description__cart_subtitle {
+  color: #fffefe;
+  font-family: "Exo2Regular";
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.48px;
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+.step-by-step-sale {
+  background: #06bc7e;
+  padding-bottom: 70px;
+
+  &__cart_image {
+    width: 115px;
+    height: 115px;
+  }
+}
+
+.step-by-step-sale .row {
+  margin-top: 70px;
+}
+
+.col {
+  position: relative;
+}
+
+.col:not(:first-child)::after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 23px;
+  position: absolute;
+  background: url('../../build/img/arrow.png');
+  top: 65px;
+  left: -35px;
+}

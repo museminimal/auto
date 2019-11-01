@@ -1,0 +1,116 @@
+.support {
+  padding: 60px 0;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__inner::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 88px;
+    background: url("../../build/img/call.svg") no-repeat center / contain;
+    width: 242px;
+    height: 325px;
+  }
+
+  &__info {
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: #222222;
+    font-family: "Exo2Medium";
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1.12px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 60px;
+  }
+
+  &__title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 38px;
+    left: 445px;
+    width: 218px;
+    height: 2px;
+    background-color: #222222;
+  }
+
+  &__subtitle {
+    text-align: center;
+    color: #222222;
+    font-family: "Exo2Medium";
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1.12px;
+  }
+
+  &__subtitle span {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.12px;
+    color: #fa6d48;
+  }
+
+  &__phones_container {
+    max-width: 300px;
+    margin: 35px auto 30px;
+  }
+
+  &__phones {
+    color: #06bc7e;
+    font-family: "Exo2Regular";
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 1.12px;
+  }
+
+  &__phones:hover {
+    text-decoration: none;
+    color: #222222;
+  }
+
+  &__btn_container {
+    margin: 10px auto;
+    max-width: 250px;
+  }
+  &__btn {
+    display: inline-block;
+    padding: 6px 43px;
+    text-decoration: none;
+    background: #dd6d4b;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: "Exo2Regular";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.64px;
+  }
+
+  &__btn:hover {
+    text-decoration: none;
+    color: #222222;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

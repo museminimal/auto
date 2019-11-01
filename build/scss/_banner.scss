@@ -1,0 +1,97 @@
+.banner {
+  background: url('../../build/img/banner.jpg') no-repeat center / cover;
+  min-height: 600px;
+  padding-bottom: 70px;
+  padding-top: 150px;
+
+  &__title {
+    color: #ffffff;
+    font-family: "Russo_One";
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 15.21px;
+    letter-spacing: 2.18px;
+    margin-bottom: 17px;
+  }
+
+  &__form {
+    background: #dd6d4b;
+    padding: 30px 20px 40px;
+
+    &_title {
+      color: #ffffff;
+      font-family: "Exo2Regular";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0.64px;
+      text-align: center;
+    }
+
+    &_input {
+      border-radius: 4px;
+      border: none;
+      display: block;
+      margin: 23px auto;
+      min-width: 215px;
+      color: #666666;
+      font-family: "Exo2LightItalic";
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.48px;
+      padding: 3px 6px;
+    }
+
+    &_btn_container{
+      margin: 35px auto 0;
+      max-width: 123px;
+
+
+    }
+  }
+}
+
+.subtitle_1 {
+  color: #222222;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Exo2Bold";
+  letter-spacing: 1.12px;
+}
+
+.subtitle_2 {
+  font-family: "Exo2Regular";
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.subtitle_3 {
+  color: #f7fe2d;
+  font-family: "Russo_One";
+  font-size: 146px;
+  font-weight: 400;
+  display: block;
+  letter-spacing: 4.32px;
+  line-height: 0.8;
+}
+
+.subtitle_4 {
+  color: #222222;
+  font-family: 'Exo2Regular';
+  font-size: 24px;
+  font-weight: 300;
+  display: block;
+  letter-spacing: 2.4px;
+}
+
+.banner__form_btn {
+  color: #222222;
+  font-family: "Exo2Regular";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+  background: #f4fe00 !important;
+  margin: 0 auto;
+  font-size: 12px !important;
+  text-transform: uppercase;
+}
