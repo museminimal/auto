@@ -74,7 +74,8 @@
     height: 27px;
     background: url("../../build/img/phone.png");
     position: absolute;
-    top: 7px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 0; }
 
 .banner {
@@ -160,48 +161,19 @@
 .advantages {
   background: #06bc7e;
   padding-bottom: 70px; }
-
-.advantages_img {
-  height: 138px; }
+  .advantages_img {
+    height: 138px; }
+  .advantages__title_container {
+    text-align: center; }
 
 .img_2 {
   width: 220px !important; }
 
-.advantages__title_container {
-  text-align: center; }
-
-.advantages__title {
-  display: inline-block;
-  position: relative; }
-
-.advantages__title::before {
-  content: '';
-  display: block;
-  width: 87px;
-  height: 70px;
-  position: absolute;
-  background: #dd6d4b;
-  top: -15px;
-  left: -32px;
-  z-index: -1; }
-
-.advantages__title::after {
-  content: '';
-  display: block;
-  width: 73px;
-  height: 4px;
-  background: #ffffff;
-  position: absolute;
-  z-index: -1;
-  top: 37px;
-  left: 27px; }
-
 .offer-description__cart__container {
   margin-top: 100px; }
-
-.offer-description__cart__container img {
-  width: 150px;
-  height: 150px; }
+  .offer-description__cart__container_img {
+    width: 150px;
+    height: 150px; }
 
 .offer-description__cart_title {
   color: #f7fe2d;
@@ -259,12 +231,6 @@
 
 .comments {
   padding-bottom: 60px; }
-
-.comments .row {
-  padding-top: 85px; }
-
-.comments__title_container {
-  text-align: center; }
 
 .comments__title {
   color: #222222;
@@ -348,52 +314,15 @@
 .step-by-step-sale {
   background: #06bc7e;
   padding-bottom: 70px; }
+  .step-by-step-sale__cart_image {
+    width: 115px;
+    height: 115px; }
+
+.step-by-step-sale .row {
+  margin-top: 70px; }
 
 .col {
   position: relative; }
-
-.step-by-step-sale__cart_image {
-  width: 115px;
-  height: 115px; }
-
-.step-by-step-sale__title_container {
-  text-align: center; }
-
-.step-by-step-sale__title {
-  position: relative;
-  text-align: left;
-  display: inline-block;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: "Russo_One";
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 38px;
-  letter-spacing: 1.28px;
-  z-index: 1;
-  padding: 70px 0 70px; }
-
-.step-by-step-sale__title::before {
-  content: '';
-  display: block;
-  width: 87px;
-  height: 104px;
-  position: absolute;
-  background: #dd6d4b;
-  top: 60px;
-  left: -35px;
-  z-index: -1; }
-
-.step-by-step-sale__title::after {
-  content: '';
-  display: block;
-  width: 73px;
-  height: 4px;
-  background: #ffffff;
-  position: absolute;
-  z-index: -1;
-  bottom: 60px;
-  left: 32px; }
 
 .col:not(:first-child)::after {
   content: '';
@@ -498,9 +427,23 @@
 .footer {
   background-color: #06bc7e;
   padding: 45px 0 0; }
+  .footer_top {
+    padding-bottom: 40px; }
 
-.footer_top {
-  padding-bottom: 40px; }
+.footer__logo {
+  position: relative;
+  display: block;
+  padding-bottom: 10px; }
+
+.footer__logo::before {
+  content: '';
+  display: block;
+  width: 114px;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
 
 .footer__nav_list-item {
   color: #ffffff; }
@@ -517,6 +460,16 @@
   letter-spacing: 0.64px;
   margin-bottom: 32px; }
 
+.footer__title::after {
+  content: '';
+  display: block;
+  width: 114px;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  top: 40px;
+  left: 15px; }
+
 .footer__subtitle {
   color: #ffffff;
   font-family: "Exo2Regular";
@@ -531,31 +484,6 @@
   letter-spacing: 0.48px;
   font-size: 12px;
   color: #ffffff; }
-
-.footer__logo {
-  position: relative;
-  display: block;
-  padding-bottom: 10px; }
-
-.footer__title::after {
-  content: '';
-  display: block;
-  width: 114px;
-  height: 2px;
-  background: #ffffff;
-  position: absolute;
-  top: 40px;
-  left: 15px; }
-
-.footer__logo::before {
-  content: '';
-  display: block;
-  width: 114px;
-  height: 2px;
-  background: #ffffff;
-  position: absolute;
-  bottom: 0;
-  left: 0; }
 
 .services:first-of-type::before {
   top: 68px; }
@@ -572,26 +500,30 @@
   display: block;
   padding-right: 50px; }
 
-.footer__phones_link {
-  display: block;
+.contacts__info_btm {
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: 0.56px;
-  color: #ffffff; }
+  line-height: 18px;
+  letter-spacing: 0.56px; }
 
-.footer__phones_link:hover {
+.contacts__info_btm:hover {
   text-decoration: none;
   color: #222222; }
 
-.footer__phones::after {
+.contacts__info_btm::after {
   content: '';
   display: block;
   width: 16px;
   height: 27px;
   background: url("../../build/img/footer_phone.png") no-repeat center/contain;
   position: absolute;
-  top: 8px;
-  right: 15px; }
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0; }
+
+.footer__address {
+  padding-right: 30px; }
 
 .address {
   color: #ffffff;
@@ -599,7 +531,8 @@
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.56px;
-  display: block; }
+  display: block;
+  text-align: right; }
 
 .footer__address::after {
   content: '';
@@ -608,8 +541,9 @@
   height: 27px;
   background: url("../../build/img/map.png") no-repeat center/contain;
   position: absolute;
-  top: 85px;
-  left: 240px; }
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0; }
 
 .copyrights {
   color: #ffffff;
@@ -638,6 +572,12 @@ body, html {
 body {
   font-family: sans-serif; }
 
+.uppercase {
+  text-transform: uppercase; }
+
+.title__left {
+  text-align: left !important; }
+
 .title {
   display: inline-block;
   text-transform: uppercase;
@@ -651,9 +591,6 @@ body {
   text-align: center;
   margin: 0;
   padding: 15px 0 20px 44px; }
-
-.title__left {
-  text-align: left !important; }
 
 .title_color_black {
   color: #222; }
@@ -690,7 +627,8 @@ body {
   bottom: 15px;
   left: 65px; }
 
-.uppercase {
-  text-transform: uppercase; }
+.title__container {
+  text-align: center;
+  padding: 60px 0 60px; }
 
 /*# sourceMappingURL=main.css.map */
